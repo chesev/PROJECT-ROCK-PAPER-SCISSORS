@@ -38,8 +38,38 @@ function playRound(playerSelection, computerSelection) {
         }
     }
 }
-    
+    //created a function named game
+function game() {
+   let round = playRound (playerSelection, computerSelection) 
+   return playRound (playerSelection, computerSelection);
+
+   for (let i = 0; )
+}
+
+
 const playerSelection = prompt("Please enter 'Rock, Paper, Scissors'", "");
 const computerSelection = computerPlay();
-console.log(playRound(playerSelection, computerSelection));
+console.log(game());
+// console.log(playRound(playerSelection, computerSelection));
 // console.log(computerPlay())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
