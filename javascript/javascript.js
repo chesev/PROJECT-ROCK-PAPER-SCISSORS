@@ -4,12 +4,14 @@ let computer = ["rock", "paper", "scissors"];
 
 //select random item from an array
 
-function computerPlay() {
+function getComputerChoice() {
     let index = computer[Math.floor(Math.random() * computer.length)]
     return index;
 }
 
+
 function playRound(playerSelection, computerSelection) {
+
     if (playerSelection === computerSelection) {
     return "This game is a tie!";
     }
@@ -37,21 +39,35 @@ function playRound(playerSelection, computerSelection) {
             return "Congratulations, you won!";
         }
     }
+
 }
+
     //created a function named game
 function game() {
-   let round = playRound (playerSelection, computerSelection) 
-   return playRound (playerSelection, computerSelection);
+    const playerSelection = prompt("Please enter 'Rock, Paper, or Scissors'", "");
+    const computerSelection = getComputerChoice();
+    console.log('You threw: ' + playerSelection);
+    console.log('The computer threw: ' + computerSelection);
 
-   for (let i = 0; )
+    console.log(playRound(playerSelection, computerSelection));
+    // const round = playRound (playerSelection, computerSelection) 
+    // return playRound (playerSelection, computerSelection);
+
 }
 
+for (let i = 0; i < 5; i++) {
+        console.log(game());
+    }
 
-const playerSelection = prompt("Please enter 'Rock, Paper, Scissors'", "");
-const computerSelection = computerPlay();
-console.log(game());
+
+
+
+// const playerSelection = prompt("Please enter 'Rock, Paper, or Scissors'", "");
+// const computerSelection = getComputerChoice();
 // console.log(playRound(playerSelection, computerSelection));
-// console.log(computerPlay())
+// game();
+// console.log(playRound(playerSelection, computerSelection));
+// console.log(getComputerChoice())
 
 
 
